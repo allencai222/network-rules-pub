@@ -1,0 +1,9 @@
+#!name=Personal Routing
+#!desc=个人分流规则（由 network-rules 统一生成，勿手改）
+#!category=Network
+
+[Rule]
+DOMAIN-SUFFIX,schwab.com,DIRECT
+DOMAIN-SUFFIX,binance.vision,DIRECT
+DOMAIN-KEYWORD,binance,PROXY
+DOMAIN-SUFFIX,bnbstatic.com,PROXY
