@@ -68,6 +68,8 @@ function patchedDone(result) {
   );
 }
 
+if (!isRequest) notify('脚本已执行');
+
 setTimeout(() => finish({}, '5 秒未完成，已原样放行'), isRequest ? 2000 : 5000);
 
 $httpClient.get({ url: SOURCE }, (error, response, data) => {
